@@ -1,0 +1,12 @@
+backports.functools-lru-cache==1.5
+beautifulsoup4==4.7.1
+certifi==2019.3.9
+chardet==3.0.4
+EasyProcess==0.2.5
+idna==2.8
+pkg-resources==0.0.0
+PyVirtualDisplay==0.2.1
+requests==2.21.0
+selenium==3.141.0
+soupsieve==1.9.1
+urllib3==1.24.2
