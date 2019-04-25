@@ -12,13 +12,13 @@ This tool allows you to directly send the link to a list of people who can insta
 ### Basic installation guide
 
 You can download Python bindings for Selenium from the `PyPI page for
-selenium package <http://pypi.python.org/pypi/selenium>`_. 
+selenium package <http://pypi.python.org/pypi/selenium>`. 
 
-You can also use `easy_install <http://python-distribute.org/distribute_setup.py>`_ or `pip <http://pypi.python.org/pypi/pip>`_ to install the bindings::
+You can also use `easy_install <http://python-distribute.org/distribute_setup.py>` or `pip <http://pypi.python.org/pypi/pip>` to install the bindings:
 
   easy_install selenium
 
-or::
+or:
 
   pip install selenium
 
