@@ -13,6 +13,7 @@ This tool allows you to directly send the link to a list of people who can insta
 
 You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to create isolated Python environments.
 
-1. cd to the directory where requirements.txt is located.
-2. activate your virtualenv.
+1. `Git clone` this proect.
+2. activate your virtual environment if you made one using 
+  `source actvate <venv dir>/activate`
 3. run: pip install -r requirements.txt in your shell
