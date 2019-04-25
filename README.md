@@ -14,7 +14,7 @@ This tool allows you to directly send the link to a list of people, on WhatsApp 
 1. *Google Chrome* : I expect you've it already installed.
 2. *Chromedriver* : Please follow the commands to download Chromedriver or from the [official download page](https://sites.google.com/a/chromium.org/chromedriver/downloads).
 
-    	`wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip`
+    `wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip`
 	
 	`unzip chromedriver_linux64.zip`
 	
