@@ -17,6 +17,6 @@ You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to 
 2. activate your virtual environment if you made one, using 
   `source <venv dir>/activate`
 3. `cd` to the project folder.
-4. Install the requirements using`pip install -r requirements.txt`
+4. Install the requirements using `pip install -r requirements.txt`
 5. Execute the file `run.py`.
 
