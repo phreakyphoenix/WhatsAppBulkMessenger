@@ -9,6 +9,20 @@ This tool allows you to directly send the link to a list of people, on WhatsApp 
 
 ## :rocket: Getting Started 
 
+### :link: Dependencies
+
+1. *Google Chrome* : I expect you've it already installed.
+2. *Chromedriver* : Please follow the commands to download Chromedriver or from the [official download page](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+    `wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip`
+	`unzip chromedriver_linux64.zip`
+	
+	Once downloaded you can configure it by using:
+	
+	`sudo mv chromedriver /usr/bin/chromedriver`
+	`sudo chown root:root /usr/bin/chromedriver`
+	`sudo chmod +x /usr/bin/chromedriver`
+
+	
 ### :walking: Basic installation 
 
 You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to create isolated Python environments.
