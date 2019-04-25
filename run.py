@@ -10,7 +10,7 @@ from time import sleep
 driver = webdriver.Chrome()
 
 phone = []                                                      #enter comma separated 10 digit phone numbers here or read them from the numbers_file
-# with open ('numbers.txt') as numbers_file:                    
+# with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
 #     for line in numbers_file:
 #         phone.append(str(line))
 
