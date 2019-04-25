@@ -23,9 +23,9 @@ You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to 
 
 You may use any or all of the following methods to enter the mobile numbers
 
-1. When you execute `run.py`, you can enter any number of comma separated 10 digit phone numbers at the prompt at once.
+1. When you execute `run.py`, you can enter any number of comma separated 10 digit phone numbers at the prompt, at once.
 2. Update the variable `phone` with a comma separated list of phone numbers
-3. Make a file called `numbers.txt` whcih will store all the 10 digit numbers, each on a line. To use thi feature comment out the three commented lines in `run.py` for input from file.
+3. Make a file called `numbers.txt` whcih will store all the 10 digit numbers, each on a line. To use this feature, uncomment the three commented lines in `run.py` for input from file.
 
 ### :running: Running
 
