@@ -19,7 +19,7 @@ You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to 
 3. `cd` to the project folder.
 4. Install the requirements using `pip install -r requirements.txt`
 
-### :telephone_receiver: Adding Phone Numbers
+### :iphone: Adding Phone Numbers
 
 You may use any or all of the following methods to enter the mobile numbers
 
