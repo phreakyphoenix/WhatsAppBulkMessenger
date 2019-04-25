@@ -9,7 +9,7 @@ This tool allows you to directly send the link to a list of people who can insta
 
 ## :rocket: Getting Started 
 
-### :runner: Basic installation guide
+### :Walking: Basic installation 
 
 You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to create isolated Python environments.
 
@@ -18,8 +18,17 @@ You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to 
   `source <venv dir>/activate`
 3. `cd` to the project folder.
 4. Install the requirements using `pip install -r requirements.txt`
-5. Open the file `run.py` and update the variable `msg` with the message you want to send to all the numbers.
-6. Update the variable `phone` with a comma separated list of phone numbers (option 1).
-7. Additionally, you can make a file called `numbers.txt` whcih will store all the 10 digit numbers, each on a line (option 2).
-8. Execute the file `run.py` and go grab a :coffee:.
 
+### :telephone_receiver: Adding Phone Numbers
+
+You may use any or all of the following methods to enter the mobile numbers
+
+1. When you execute `run.py`, you can enter any number of comma separated 10 digit phone numbers at the prompt at once.
+2. Update the variable `phone` with a comma separated list of phone numbers
+3. Make a file called `numbers.txt` whcih will store all the 10 digit numbers, each on a line. To use thi feature comment out the three commented lines in `run.py` for input from file.
+
+### :Running: Running
+
+1. Open the file `run.py` and update the variable `msg` with the message you want to send to all the numbers.
+2. Make sure you've added the numbers properly. Make sure there are no duplicates.
+3. Execute the file `run.py` and go grab a :coffee:
