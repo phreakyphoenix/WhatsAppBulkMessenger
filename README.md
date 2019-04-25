@@ -1,4 +1,4 @@
-# WhatsApp Bulk Messager :mega:
+# WhatsApp Bulk Messager :loudspeaker:
 
 ## :dart: What it does 
 This tool makes adding multiple people to a whatsapp group much easier. 
@@ -9,7 +9,7 @@ This tool allows you to directly send the link to a list of people who can insta
 
 ## :rocket: Getting Started 
 
-### :Walking: Basic installation 
+### :walking: Basic installation 
 
 You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to create isolated Python environments.
 
@@ -27,7 +27,7 @@ You may use any or all of the following methods to enter the mobile numbers
 2. Update the variable `phone` with a comma separated list of phone numbers
 3. Make a file called `numbers.txt` whcih will store all the 10 digit numbers, each on a line. To use thi feature comment out the three commented lines in `run.py` for input from file.
 
-### :Running: Running
+### :running: Running
 
 1. Open the file `run.py` and update the variable `msg` with the message you want to send to all the numbers.
 2. Make sure you've added the numbers properly. Make sure there are no duplicates.
