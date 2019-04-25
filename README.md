@@ -32,7 +32,7 @@ You may use any or all of the following methods to enter the mobile numbers
 1. Open the file `run.py` and update the variable `msg` with the message you want to send to all the numbers.
 2. Make sure you've added the numbers properly. Make sure there are no duplicates.
 3. When the automated Chrome browser window opens up, be ready to scan the QR code with your phone to sign in to WhatsApp Web, more info on how to do this can be founds in the [WhatsApp Web faq](https://faq.whatsapp.com/en/web/28080003/).
-4. Execute the file `run.py` and go grab a :coffee:
+4. Execute `python run.py` and go grab a :donut:.
 
 ## :stars: Advanced Tips and Tricks
 
