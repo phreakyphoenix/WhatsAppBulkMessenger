@@ -26,7 +26,7 @@ This tool allows you to directly send the link to a list of people, on WhatsApp 
 	
 	`sudo chmod +x /usr/bin/chromedriver`
 	
-	_**Process for installing Chromedriver on Windows is also the same as above.*_
+	_**Process for installing Chromedriver on Windows is also the same as above.**_
 	
 ### :walking: Basic installation 
 
