@@ -1,7 +1,7 @@
 # WhatsApp Bulk Messager :mega:
 
-## What it does :shipit:
-This tool solves the problem of adding multiple people to a WhatsApp group. :confetti_ball:
+## What it does :dart:
+This tool makes adding multiple people to a whatsapp group much easier. 
 
 To prevent spam, WhatsApp desn't allow users to add anyone who is not there in their contact list to a group. So one has to either send them the group link over email etc., which might not be seen by them immediately. 
 
@@ -16,4 +16,5 @@ You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to 
 1. `Git clone` this proect.
 2. activate your virtual environment if you made one using 
   `source actvate <venv dir>/activate`
-3. run: pip install -r requirements.txt in your shell
+3. `cd` to the project folder.
+3. Run `pip install -r requirements.txt`
