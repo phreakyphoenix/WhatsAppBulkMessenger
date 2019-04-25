@@ -1,8 +1,6 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import UnexpectedAlertPresentException
-import urllib
+from urllib import quote
 from time import sleep
 
 # %%from pyvirtualdisplay import Display
@@ -16,17 +14,16 @@ with open ('numbers.txt') as numbers_file:
     for line in numbers_file:
         phone.append(str(line))
 
-msg = "3Thank you for your response. Welcome aboard!"            #message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
+msg = "69Hey check out google.com"           #message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 
-msg = urllib.quote(msg)                                         #url-encode the message, use other functios for handling dictionaries, not recommended
+msg = quote(msg)                                                #url-encode the message, use other functios for handling dictionaries, not recommended
 driver.get('https://web.whatsapp.com')                          #first call without delay in order to scan qr code
 css_selector = '#main > footer > div._3pkkz.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text'
-
-for i in range(len(phone)):
-    url='https://web.whatsapp.com/send?phone=91' + phone[i] + "&text=" + msg
-    print url
+sleep(2)
+for number in phone:
+    url='https://web.whatsapp.com/send?phone=91' + number + "&text=" + msg
     driver.get(url)
-    sleep(4)
+    sleep(3)                                                    #any delay is okay, even 0, but 3-5 seems appropriate
     for i in range(100):
         try:
             driver.find_element_by_css_selector(css_selector).send_keys(Keys.RETURN)
@@ -35,3 +32,5 @@ for i in range(len(phone)):
         except:
             print("not yet")
             sleep(1)
+    print 'Last Number', number
+# driver.quit()                                                 #uncomment to close chrome window as scoon as program ends
