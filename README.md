@@ -1,5 +1,5 @@
 # WhatsApp Bulk Messager
 
-## What it does :shipit
+## What it does :shipit:
 
 ## Getting Started
