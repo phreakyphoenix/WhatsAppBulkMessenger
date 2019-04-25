@@ -41,7 +41,7 @@ You may consider using [virtualenv](http://pypi.python.org/pypi/virtualenv) to c
 
 You may use any or all of the following methods to enter the mobile numbers
 
-1. When you execute `run.py`, you can enter any number of comma separated 10 digit phone numbers at the prompt, at once.
+1. When you execute `python run.py`, you can enter any number of comma separated 10 digit phone numbers at the prompt, at once.
 2. Update the variable `phone` with a comma separated list of phone numbers.
 3. Make a file called `numbers.txt` whcih will store all the 10 digit numbers, each on a line. To use this feature, uncomment the three commented lines in `run.py` for input from file.
 
@@ -50,7 +50,7 @@ You may use any or all of the following methods to enter the mobile numbers
 1. Open the file `run.py` and update the variable `msg` with the message you want to send to all the numbers.
 2. Make sure you've added the numbers properly. Make sure there are no duplicates.
 3. When the automated Chrome browser window opens up, be ready to scan the QR code with your phone to sign in to WhatsApp Web, more info on how to do this can be founds in the [WhatsApp Web faq](https://faq.whatsapp.com/en/web/28080003/).
-4. Execute `python run.py` and go grab a :doughnut:.
+4. Go grab a :doughnut:, you've earned it.
 
 ## :stars: Advanced Tips and Tricks
 
