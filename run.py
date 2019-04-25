@@ -14,7 +14,7 @@ with open ('numbers.txt') as numbers_file:
     for line in numbers_file:
         phone.append(str(line))
 
-msg = "69Hey check out google.com"           #message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
+msg = "Thank you for your response. Check out google.com"           #message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 
 msg = quote(msg)                                                #url-encode the message, use other functios for handling dictionaries, not recommended
 driver.get('https://web.whatsapp.com')                          #first call without delay in order to scan qr code
