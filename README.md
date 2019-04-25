@@ -29,7 +29,7 @@ This tool allows you to directly send the link to a list of people, on WhatsApp 
 	
 ### :walking: Basic installation 
 
-You may consider using `virtualenv <http://pypi.python.org/pypi/virtualenv>` to create isolated Python environments.
+You may consider using `[virtualenv](http://pypi.python.org/pypi/virtualenv)` to create isolated Python environments.
 
 1. `Git clone` this proect from your terminal or download the zip from Github web.
 2. Activate your virtual environment if you made one, using 
