@@ -60,6 +60,9 @@ You may use any or all of the following methods to enter the mobile numbers
 3. For multiple countries, please remove the _91_ from `url` string, and prepend each number directly with the country code, without plus symbol, for example 09940694571 for the US.
 4. You can use any browser, not just Chrome as long as it has a supporting webdriver and install it manually.
 
+## :diamond_shape_with_a_dot_inside: Supporting Python3
+Use the `urllib.parse.quote` function instead of the urllib.quote as in Py2, and obviously use brackets for print. That's it!
+
 ## :performing_arts: Disclaimer
 
 This code is in no way affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial software. The developers claim no responsibility and offer no warranty.
