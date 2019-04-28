@@ -61,7 +61,7 @@ You may use any or all of the following methods to enter the mobile numbers
 4. You can use any browser, not just Chrome as long as it has a supporting webdriver and install it manually.
 
 ## :diamond_shape_with_a_dot_inside: Supporting Python3
-Use the `urllib.parse.quote` function instead of the urllib.quote as in Py2, and obviously use brackets for print. That's it!
+Use the `urllib.parse.quote` function instead of the `urllib.quote` as in Py2, and obviously use brackets for print. That's it!
 
 ## :performing_arts: Disclaimer
 
