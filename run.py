@@ -13,7 +13,7 @@ phone = []                                                      #enter comma sep
 with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
     for line in numbers_file:
     	line=line.strip()
-    	if len (line)==10:
+    	if len (line)==10:								   		#skip if you have no empty lines
     		phone.append(str(line))
 
 # phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
