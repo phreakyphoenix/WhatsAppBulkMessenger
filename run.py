@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from urllib import quote
 from time import sleep
-
 # %%from pyvirtualdisplay import Display
 # display = Display(visible=0, size=(800, 600))
 # display.start()
@@ -10,13 +9,16 @@ from time import sleep
 driver = webdriver.Chrome()
 
 phone = []                                                      #enter comma separated 10 digit phone numbers here or read them from the numbers_file
-# with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
-#     for line in numbers_file:
-#         phone.append(str(line))
+with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
+    for line in numbers_file:
+    	line=line.strip()
+    	if len (line)==10:
+    		phone.append(str(line))
 
-phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
+# phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
 
-msg = "Thank you for your response. Check out google.com"       #message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
+# message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
+msg = "!!!!!!!!Hey"     
 
 msg = quote(msg)                                                #url-encode the message, use other functios for handling dictionaries, not recommended
 driver.get('https://web.whatsapp.com')                          #first call without delay in order to scan qr code
@@ -34,5 +36,6 @@ for number in phone:
         except:
             print("not yet")
             sleep(1)
-    print 'Last Number', number
+    print ('Last Number '+ str(number))
+print ("Done")
 # driver.quit()                                                 #uncomment to close chrome window as scoon as program ends
