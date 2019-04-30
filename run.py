@@ -8,6 +8,7 @@ from time import sleep
 
 driver = webdriver.Chrome()
 
+<<<<<<< HEAD
 phone = []                                                      #enter comma separated 10 digit phone numbers here or read them from the numbers_file
 with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
     for line in numbers_file:
@@ -19,15 +20,29 @@ with open ('numbers.txt') as numbers_file:                    #uncomment these t
 
 # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 msg = "!!!!!!!!Hey"     
+=======
+phone = []                       # enter comma separated 10 digit phone numbers here or read them from the numbers_file
+# with open ('numbers.txt') as numbers_file:     #uncomment these three three lines to read input from numbers.txt file
+#     for line in numbers_file:
+#         phone.append(str(line))
 
-msg = quote(msg)                                                #url-encode the message, use other functios for handling dictionaries, not recommended
-driver.get('https://web.whatsapp.com')                          #first call without delay in order to scan qr code
-css_selector = '#main > footer > div._3pkkz.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text'
+phone.extend(
+    str(
+        raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")
+    ).split(",")
+)               #enter numbers from stdin
+
+msg = "Thank you for your response. Check out google.com"  # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
+>>>>>>> 6980e1ecec61bbe0cdc6d4ac2dbac162d3855940
+
+msg = quote(msg)  # url-encode the message, use other functios for handling dictionaries, not recommended
+driver.get("https://web.whatsapp.com")  # first call without delay in order to scan qr code
+css_selector = "#main > footer > div._3pkkz.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
 sleep(2)
 for number in phone:
-    url='https://web.whatsapp.com/send?phone=91' + number + "&text=" + msg
+    url = "https://web.whatsapp.com/send?phone=91" + number + "&text=" + msg
     driver.get(url)
-    sleep(3)                                                    #any delay is okay, even 0, but 3-5 seems appropriate
+    sleep(3)  # any delay is okay, even 0, but 3-5 seems appropriate
     for i in range(100):
         try:
             driver.find_element_by_css_selector(css_selector).send_keys(Keys.RETURN)
@@ -36,6 +51,10 @@ for number in phone:
         except:
             print("not yet")
             sleep(1)
+<<<<<<< HEAD
     print ('Last Number '+ str(number))
 print ("Done")
+=======
+    print("Last Number", number)
+>>>>>>> 6980e1ecec61bbe0cdc6d4ac2dbac162d3855940
 # driver.quit()                                                 #uncomment to close chrome window as scoon as program ends
