@@ -61,9 +61,9 @@ You may use any or all of the following methods to enter the mobile numbers
 4. You can use any browser, not just Chrome as long as it has a supporting webdriver and install it manually.
 
 ## :dragon: Debugging
-This program uses a CSS Selector to find out where exactly to write the message, just like a human would. And that keeps changing over time based on how web.whatsapp.com is designed. So all we have to do is update the CSS Selector in the code, by doing the following:
+This program uses a CSS Selector to find out where exactly to write the message, just like a human would. And that keeps changing over time based on how [WhatsApp Web](web.whatsapp.com) is designed. So all we have to do is update the CSS Selector in the code, by doing the following:
 
-1. Right click on the white space in whatsapp web where you type the message, 
+1. Right click on the white space in [WhatsApp Web](web.whatsapp.com) where you type the message, 
 2. Press Inspect element
 3. From the inspector in chrome or any browser you're using, copy the CSS selector
 4. Update the `css_selector` variable in the code.
