@@ -68,7 +68,7 @@ This program uses a CSS Selector to find out where exactly to write the message,
 3. From the inspector in chrome or any browser you're using, copy the CSS selector
 4. Update the `css_selector` variable in the code.
 
-![](assets/CopyCSSSelector.png){:class="img-responsive" width="50%"}
+![](assets/CopyCSSSelector.png?v=4&s=200)
 That's it. :smiley:
 
 ## :diamond_shape_with_a_dot_inside: Supporting Python3
