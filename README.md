@@ -68,7 +68,7 @@ This program uses a CSS Selector to find out where exactly to write the message,
 3. From the inspector in chrome or any browser you're using, copy the CSS selector
 4. Update the `css_selector` variable in the code.
 
-<img src="assets/CopyCSSSelector.png" width="100" >
+<img src="assets/CopyCSSSelector.png" width="800" alt="Copy CSS Selector from WhatsApp" class="responsive">
 
 That's it. :smiley:
 
