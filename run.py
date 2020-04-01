@@ -31,7 +31,7 @@ You can join my fancy group to lear ML at https://whatsapp.com/amazingML
 
 msg = quote(msg)  # url-encode the message, use other functios for handling dictionaries, not recommended
 driver.get("https://web.whatsapp.com")  # first call without delay in order to scan qr code
-css_selector = "#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
+css_selector = "#main > footer > div._3pkkz.V42si.copable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
 sleep(2)
 for number in phone:
     url = "https://web.whatsapp.com/send?phone=91" + number + "&text=" + msg
