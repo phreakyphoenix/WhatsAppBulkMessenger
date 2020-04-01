@@ -60,7 +60,7 @@ You may use any or all of the following methods to enter the mobile numbers
 3. For multiple countries, please remove the _91_ from `url` string, and prepend each number directly with the country code, without plus symbol, for example 09940694571 for the US.
 4. You can use any browser, not just Chrome as long as it has a supporting webdriver and install it manually.
 
-## :jack_o_lantern: Debugging
+## :dragon: Debugging
 This program uses a CSS Selector to find out where exactly to write the message, just like a human would. And that keeps changing over time based on how web.whatsapp.com is designed. So all we have to do is update the CSS Selector in the code, by doing the following:
 
 1. Right click on the white space in whatsapp web where you type the message, 
@@ -68,7 +68,8 @@ This program uses a CSS Selector to find out where exactly to write the message,
 3. From the inspector in chrome or any browser you're using, copy the CSS selector
 4. Update the `css_selector` variable in the code.
 
-![](assets/CopyCSSSelector.png?v=4&s=200)
+<img src="assets/CopyCSSSelector.png" width="100" >
+
 That's it. :smiley:
 
 ## :diamond_shape_with_a_dot_inside: Supporting Python3
