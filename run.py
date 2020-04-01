@@ -1,6 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from urllib import quote
+
+#Uncomment line below to use python 2
+# from urllib import quote   
+
+#Uncomment line below to use python 3 
+from urllib.parse import quote
+
 from time import sleep
 # %%from pyvirtualdisplay import Display
 # display = Display(visible=0, size=(800, 600))
@@ -8,7 +14,6 @@ from time import sleep
 
 driver = webdriver.Chrome()
 
-<<<<<<< HEAD
 phone = []                                                      #enter comma separated 10 digit phone numbers here or read them from the numbers_file
 with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
     for line in numbers_file:
@@ -19,11 +24,16 @@ with open ('numbers.txt') as numbers_file:                    #uncomment these t
 # phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
 
 # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
-msg = "!!!!!!!!Hey"     
+msg = '''
+Hey!!
+This is a *test* _message_.
+See you can do _*all sorts of text formatting*_.
+You can join my fancy group to lear ML at https://whatsapp.com/amazingML
+'''     
 
 msg = quote(msg)  # url-encode the message, use other functios for handling dictionaries, not recommended
 driver.get("https://web.whatsapp.com")  # first call without delay in order to scan qr code
-css_selector = "#main > footer > div._3pkkz.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
+css_selector = "#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
 sleep(2)
 for number in phone:
     url = "https://web.whatsapp.com/send?phone=91" + number + "&text=" + msg
