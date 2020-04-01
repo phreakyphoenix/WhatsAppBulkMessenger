@@ -10,16 +10,8 @@ from time import sleep
 # display = Display(visible=0, size=(800, 600))
 # display.start()
 
-driver = webdriver.Chrome()
-
-phone = []                                                      #enter comma separated 10 digit phone numbers here or read them from the numbers_file
-with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
-    for line in numbers_file:
-    	line=line.strip()
-    	if len (line)==10:								   		#skip numbers of length not equal to 10
-    		phone.append(str(line))
-
-# phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
+#update css selector if you have any issues
+css_selector = "#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
 
 # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 msg = '''
@@ -29,9 +21,19 @@ See you can do _*all sorts of text formatting*_.
 You can join my fancy group to lear ML at https://whatsapp.com/amazingML
 '''     
 
+
+driver = webdriver.Chrome()
+
+phone = []                                                      #enter comma separated 10 digit phone numbers here or read them from the numbers_file
+with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
+    for line in numbers_file:
+    	line=line.strip()
+    	if len (line)==10:								   		#skip numbers of length not equal to 10
+    		phone.append(str(line))
+# phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
+
 msg = quote(msg)  # url-encode the message, use other functios for handling dictionaries, not recommended
 driver.get("https://web.whatsapp.com")  # first call without delay in order to scan qr code
-css_selector = "#main > footer > div._3pkkz.V42si.copable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
 sleep(2)
 for number in phone:
     url = "https://web.whatsapp.com/send?phone=91" + number + "&text=" + msg
