@@ -1,11 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-#Uncomment line below to use python 2
-# from urllib import quote   
 
-#Uncomment line below to use python 3 
-from urllib.parse import quote
+# from urllib import quote      #Uncomment line below to use python 2
+from urllib.parse import quote  #Uncomment line below to use python 3 
 
 from time import sleep
 # %%from pyvirtualdisplay import Display
@@ -18,7 +16,7 @@ phone = []                                                      #enter comma sep
 with open ('numbers.txt') as numbers_file:                    #uncomment these three three lines to read input from numbers.txt file
     for line in numbers_file:
     	line=line.strip()
-    	if len (line)==10:								   		#skip if you have no empty lines
+    	if len (line)==10:								   		#skip numbers of length not equal to 10
     		phone.append(str(line))
 
 # phone.extend(str(raw_input("Enter the comma separated list of numbers (Press enter to skip)\n")).split(','))
