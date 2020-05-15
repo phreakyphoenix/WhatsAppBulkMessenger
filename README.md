@@ -57,7 +57,7 @@ You may use any or all of the following methods to enter the mobile numbers
 
 1. You can add individual messages for each contact, however that will require elementary knowledge in Python, this could be done using a file for input, and might be included in future releases.
 2. For using country codes other than India but only one country, please change it in the `url` string in `run.py`.
-3. For multiple countries, please remove the _91_ from `url` string, and prepend each number directly with the country code, without plus symbol, for example 09940694571 for the US.
+3. For multiple countries, please remove the _91_ from `url` string, and prepend each number directly with the country code, without plus symbol, for example 9876543210 for the US.
 4. You can use any browser, not just Chrome as long as it has a supporting webdriver and install it manually.
 
 ## :dragon: Debugging
