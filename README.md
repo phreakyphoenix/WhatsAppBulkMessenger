@@ -6,7 +6,7 @@ This tool makes adding multiple people to a WhatsApp group much easier.
 To prevent spam, WhatsApp doesn’t allow you to add someone not there in your contact list, to a group. So you'd end up wasting time manually adding all the numbers that you want to your phone. Or you have to send them the group link over email etc., which they might not immediately respond to. 
 
 #### This tool allows you to directly send the link to a list of people, on WhatsApp itself, who can instantly join your group. :tada:
-#### If you like it, Do :star2: the repo and show some :heart:
+#### If you like it, Do star :star2: the repo and show some love. :heart:
 
 ## :rocket: Getting Started 
 
