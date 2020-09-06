@@ -11,16 +11,16 @@ from time import sleep
 # display.start()
 
 #update css selector if you have any issues
-css_selector = "#main > footer > div._3pkkz.V42si.copyable-area > div._1Plpp > div > div._2S1VP.copyable-text.selectable-text"
+css_selector = "#main > footer > div._3ee1T._1LkpH.copyable-area > div._3uMse > div > div._3FRCZ.copyable-text.selectable-text"
 
 # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 msg = '''
-Hey!!
-This is a *test* _message_.
-See you can do _*all sorts of text formatting*_.
-You can join my fancy group to lear ML at https://whatsapp.com/amazingML
-'''     
+You can try all sorts of formatting like _italics_ and *bold* or _*bold italics*_. 
 
+Multiline works too.
+
+And so do links like https://google.com!
+'''     
 
 driver = webdriver.Chrome()
 
@@ -35,18 +35,33 @@ with open ('numbers.txt') as numbers_file:                    #uncomment these t
 msg = quote(msg)  # url-encode the message, use other functios for handling dictionaries, not recommended
 driver.get("https://web.whatsapp.com")  # first call without delay in order to scan qr code
 sleep(2)
-for number in phone:
+failed_list = []
+for index, number in enumerate(phone, 1):
     url = "https://web.whatsapp.com/send?phone=91" + number + "&text=" + msg
     driver.get(url)
+    TRIES = 20
+
     sleep(3)  # any delay is okay, even 0, but 3-5 seems appropriate
-    for i in range(100):
+    for i in range(TRIES):
         try:
             driver.find_element_by_css_selector(css_selector).send_keys(Keys.RETURN)
             driver.execute_script("window.onbeforeunload = function() {};")
+            print (f'Sent to {index} : {number}')
             break
         except:
             print("not yet")
             sleep(1)
-    print ('Last Number '+ str(number))
+        
+    else:
+        failed_list.append(number)
+    
 print ("Done")
-# driver.quit()                                                 #uncomment to close chrome window as scoon as program ends
+
+if (len(failed_list)==0):
+    print (f'Message successfully sent to all {len(phone)} numbers.')
+else:
+    print (f'Message sent to all numbers EXCEPT:')
+    for number in failed_list:
+        print (number)
+    
+driver.quit()                                                 #uncomment to close chrome window as scoon as program ends
