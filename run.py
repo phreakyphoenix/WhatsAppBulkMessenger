@@ -11,7 +11,7 @@ from time import sleep
 # display.start()
 
 #update css selector if you have any issues
-css_selector = "#main > footer > div._3ee1T._1LkpH.copyable-area > div._3uMse > div > div._3FRCZ.copyable-text.selectable-text"
+css_selector = "#main > footer > div._2BU3P.tm2tP.copyable-area > div._1SEwr > div > div.p3_M1 > div > div._13NKt.copyable-text.selectable-text"
 
 # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 msg = '''
@@ -20,7 +20,7 @@ You can try all sorts of formatting like _italics_ and *bold* or _*bold italics*
 Multiline works too.
 
 And so do links like https://google.com!
-'''     
+'''      
 
 driver = webdriver.Chrome()
 
