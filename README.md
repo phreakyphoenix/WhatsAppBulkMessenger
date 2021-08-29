@@ -75,7 +75,8 @@ That's it. :smiley:
 
 ## :diamond_shape_with_a_dot_inside: Supporting Python3
 Use the `urllib.parse.quote` function instead of the `urllib.quote` as in Py2, and obviously use brackets for print. That's it! 
-Update :Now it supports both versions, just uncomment the library you need in imports. Defaults to Py3.
+
+Update: Now it supports both versions, just uncomment the library you need in imports. Defaults to Py3.
 
 ## :performing_arts: Disclaimer
 
