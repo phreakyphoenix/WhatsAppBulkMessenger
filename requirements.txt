@@ -1,6 +1,6 @@
 backports.functools-lru-cache==1.5
 beautifulsoup4==4.7.1
-certifi==2019.3.9
+certifi==2022.12.7
 chardet==3.0.4
 EasyProcess==0.2.5
 idna==2.8
