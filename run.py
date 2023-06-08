@@ -45,7 +45,7 @@ for index, number in enumerate(phone, 1):
     for i in range(TRIES):
         try:
             driver.find_element(By.CSS_SELECTOR, css_selector).send_keys(Keys.RETURN)
-            sleep(1)          #in new WA Web, instantly clicking enter keeps message in typing an discards it
+            sleep(1)          #in new WA Web, instantly clicking enter keeps message in typing and discards it
             driver.execute_script("window.onbeforeunload = function() {};")  # disable alert
             print (f'Sent to {index} : {number}')
             break
