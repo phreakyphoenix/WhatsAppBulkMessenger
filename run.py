@@ -11,7 +11,7 @@ from time import sleep
 # display.start()
 
 #update css selector if you have any issues
-css_selector = "#main > footer > div._2lSWV._3cjY2.copyable-area > div > span:nth-child(2) > div > div._1VZX7 > div._3Uu1_ > div > div > p"
+css_selector = "#main > footer > div._2lSWV._3cjY2.copyable-area > div > span:nth-child(2) > div > div._1VZX7 > div._3Uu1_ > div > div > p > span"
 # message to be sent to everyone, you can also read it as a dict from a file with ph nos as keys
 msg = '''
 You can try all sorts of formatting like _italics_ and *bold* or _*bold italics*_. 
@@ -37,6 +37,7 @@ sleep(2)
 failed_list = []
 for index, number in enumerate(phone, 1):
     url = "https://web.whatsapp.com/send?phone=91" + number + "&text=" + msg
+    print (f'Opening {index} : {number}')
     driver.get(url)
     TRIES = 200
 
@@ -44,7 +45,8 @@ for index, number in enumerate(phone, 1):
     for i in range(TRIES):
         try:
             driver.find_element(By.CSS_SELECTOR, css_selector).send_keys(Keys.RETURN)
-            driver.execute_script("window.onbeforeunload = function() {};")
+            sleep(1)          #in new WA Web, instantly clicking enter keeps message in typing an discards it
+            driver.execute_script("window.onbeforeunload = function() {};")  # disable alert
             print (f'Sent to {index} : {number}')
             break
         except:
